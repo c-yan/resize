@@ -1,7 +1,7 @@
 unit stretchf;
 
 interface
-uses Windows, SysUtils, Graphics;
+uses Windows, SysUtils, Vcl.Graphics;
 
 type
   TRGBColor = record

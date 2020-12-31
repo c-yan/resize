@@ -3,7 +3,7 @@ program RESIZE;
 uses
   Windows,
   SysUtils,
-  Graphics,
+  Vcl.Graphics,
   Jpeg,
   stretchf in 'stretchf.pas';
 
