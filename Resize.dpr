@@ -7,11 +7,6 @@ uses
   Jpeg,
   stretchf in 'stretchf.pas';
 
-procedure TestProc(Progress: Integer);
-begin
-  WriteLn(Progress);
-end;
-
 var
   Src: TBitmap;
   SrcName, DstName: TFileName;
@@ -41,7 +36,6 @@ begin
     else Src.LoadFromFile(SrcName);
 
     stretchf.Stretch(Src, Width, Height, nil);
-    //stretchf.Stretch(Src, Width, Height, TestProc);
 
     if AnsiLowerCase(ExtractFileExt(DstName)) = '.jpg' then
     begin
